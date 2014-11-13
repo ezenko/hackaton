@@ -1,2 +1,3 @@
-hui
-<?php dpm($content);
+<?php foreach ($items as $delta => $item) {
+    echo render($item);
+} ?>

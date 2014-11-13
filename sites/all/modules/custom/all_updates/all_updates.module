@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * implementation of hook_help()
+ */
+function all_updates_help($path, $arg) {
+    if ($path == "admin/help#all_updates") {
+        $txt = "This module is used for updates in the Code Driven Development workflow.
+           It contains updates which should be applied to all sites in this Drupal installation.";
+        return $txt;
+    }
+}

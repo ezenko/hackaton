@@ -39,11 +39,16 @@ function all_updates_update_7002() {
   include_once './includes/install.inc';
 
   //Refresh module list
-  module_list(TRUE);  
+  module_list(TRUE);
   // Enable default modules
   $enablemodules = array(
     'admin_menu',
-    'features'
+    'entity',
+    'features',
+    'node_reference',
+    'references',
+    'user_reference',
+    'field_collection'
   );
   $result = module_enable($enablemodules);
   

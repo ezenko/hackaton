@@ -67,7 +67,10 @@ function all_updates_update_7002() {
   // Disable modules
   $disable = array('dashboard', 'overlay', 'shortcut', 'toolbar', 'color');
   module_disable($disable);
-  
+
+  theme_enable(array('hackaton'));
+  variable_set('theme_default','hackaton');
+
   return 'enable and disable default modules and settings.';
 
 }

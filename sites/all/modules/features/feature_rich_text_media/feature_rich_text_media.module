@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Rich text media feature.
+ */
+
+include_once 'feature_rich_text_media.features.inc';

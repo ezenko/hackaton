@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * feature_homepage.features.inc
+ * feature_tabs.features.inc
  */
 
 /**
  * Implements hook_node_info().
  */
-function feature_homepage_node_info() {
+function feature_tabs_node_info() {
   $items = array(
-    'homepage' => array(
-      'name' => t('Homepage'),
+    'item_tabs' => array(
+      'name' => t('Item - Tabs'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

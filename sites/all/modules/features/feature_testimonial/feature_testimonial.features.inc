@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * feature_homepage.features.inc
+ * feature_testimonial.features.inc
  */
 
 /**
  * Implements hook_node_info().
  */
-function feature_homepage_node_info() {
+function feature_testimonial_node_info() {
   $items = array(
-    'homepage' => array(
-      'name' => t('Homepage'),
+    'testimonial' => array(
+      'name' => t('Testimonial'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

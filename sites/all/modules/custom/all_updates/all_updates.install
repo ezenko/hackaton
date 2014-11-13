@@ -43,12 +43,24 @@ function all_updates_update_7002() {
   // Enable default modules
   $enablemodules = array(
     'admin_menu',
+    'ctools',
+    'devel',
     'entity',
     'features',
+    'feature_case_studies',
+    'feature_cta_block',
+    'feature_customers_logos',
+    'feature_homepage',
+    'feature_slider',
+    'feature_usp_items',
+    'field_collection',
+    'media',
     'node_reference',
+    'pathauto',
     'references',
+    'token',
     'user_reference',
-    'field_collection'
+
   );
   $result = module_enable($enablemodules);
   

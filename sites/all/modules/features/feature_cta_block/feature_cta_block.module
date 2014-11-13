@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CTA block feature.
+ */
+
+include_once 'feature_cta_block.features.inc';

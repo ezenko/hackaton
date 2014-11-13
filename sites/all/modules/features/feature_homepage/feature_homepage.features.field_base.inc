@@ -35,8 +35,13 @@ function feature_homepage_field_default_field_bases() {
     'settings' => array(
       'referenceable_types' => array(
         'article' => 0,
+        'case_studies' => 'case_studies',
+        'cta_block' => 'cta_block',
+        'customer_logo' => 'customer_logo',
         'homepage' => 0,
         'page' => 0,
+        'slider_item' => 'slider_item',
+        'usp_items' => 'usp_items',
       ),
       'view' => array(
         'args' => array(),

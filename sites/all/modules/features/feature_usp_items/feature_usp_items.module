@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the USP items feature.
+ */
+
+include_once 'feature_usp_items.features.inc';

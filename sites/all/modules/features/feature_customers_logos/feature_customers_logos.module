@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Customers logos feature.
+ */
+
+include_once 'feature_customers_logos.features.inc';

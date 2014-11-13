@@ -13,18 +13,35 @@ function hackaton_css_alter(&$css){
 }
 
 function hackaton_preprocess_html(&$variables) {
-  drupal_add_library('system', 'ui');
-  $variables['classes_array'][] = 'noJS';
 
-  if(isset($variables['page']['content']['system_main']['nodes'][arg(1)]) && ($variables['page']['content']['system_main']['nodes'][arg(1)]['#entity_type'] == 'node')) {
-    $variables['theme_hook_suggestions'][] = 'html__'. $variables['page']['content']['system_main']['nodes'][arg(1)]['#bundle'];
-    //page title should be generated from meta tags
-    /*if (!empty($variables['page']['content']['system_main']['nodes'][arg(1)]['field_display_title'])) {
-      //$variables['head_title_array']['title'] = $variables['page']['content']['system_main']['nodes'][arg(1)]['field_display_title'][0]['#markup'];
-      //$variables['head_title'] = implode(' | ', $variables['head_title_array']);
-      //var_dump($variables); exit;
-    }*/
+}
+
+function  hackaton_menu_tree__main_menu($variables){
+  return '<ul class="nav top-2">'. $variables['tree'] . '</ul>';
+}
+
+function hackaton_menu_link($variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
   }
+  if (!empty($element['#attributes']['class']) && in_array('active-trail', $element['#attributes']['class'])) {
+    $element['#attributes']['class'][] = 'active';
+  }
+  if ($sub_menu) {
+    $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
+
+    $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+    $element['#localized_options']['html'] = true;
+
+    $output = '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $element['#title'] . '<b class="caret"></b></a>';
+  } else {
+    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  }
+
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . str_replace('nav top-2', 'dropdown-menu', $sub_menu) . "<b class='caret-out'></b></li>\n";
 }
 
 function hackaton_preprocess_page(&$variables) {

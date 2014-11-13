@@ -4,6 +4,22 @@ core = "7.x"
 project = "hackaton"
 engine = phptemplate
 
-stylesheets[all][] = c/main.css
+stylesheets[all][] = h/assets/plugins/bootstrap/css/bootstrap.min.css
+stylesheets[all][] = h/assets/css/style.css
+stylesheets[all][] = h/assets/css/headers/header1.css
+stylesheets[all][] = h/assets/plugins/bootstrap/css/bootstrap-responsive.min.css
+stylesheets[all][] = h/assets/css/style_responsive.css
+stylesheets[all][] = h/assets/css/custom.css
 
-scripts[] = j/content.js
+scripts[] = h/assets/js/jquery-1.8.2.min.js
+scripts[] = h/assets/js/modernizr.custom.js
+scripts[] = h/assets/plugins/bootstrap/js/bootstrap.min.js
+
+scripts[] = h/assets/plugins/flexslider/jquery.flexslider-min.js
+scripts[] = h/assets/plugins/parallax-slider/js/modernizr.js
+scripts[] = h/assets/plugins/parallax-slider/js/jquery.cslider.js
+scripts[] = h/assets/plugins/back-to-top.js
+scripts[] = h/assets/js/app.js
+scripts[] = h/assets/js/pages/index.js
+scripts[] = h/assets/js/content.js
+scripts[] = h/assets/js/jquery-ui.min.js

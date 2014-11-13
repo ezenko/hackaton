@@ -1,0 +1,9 @@
+name = Hackaton
+description = Hackaton theme
+core = "7.x"
+project = "hackaton"
+engine = phptemplate
+
+stylesheets[all][] = c/main.css
+
+scripts[] = j/content.js

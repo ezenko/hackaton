@@ -1,0 +1,156 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ *
+ * @return
+ */
+function colours_installer_menu() {
+
+  $items['admin/config/elements'] = array(
+    'title' => t('Configure website elements'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('colours_installer_settings_form'),
+    'access arguments' => array('administer site settings'),
+  );
+
+  return $items;
+
+}
+
+function colours_installer_settings_form() {
+  $form = array();
+
+  $form['content_types'] = array(
+    '#type' => 'fieldset',
+    '#collapsible' => true,
+    '#collapsed' => true,
+    '#title' => t('Page types'),
+  );
+
+  $form['content_types']['pt_homepage'] = array(
+    '#title' => t('Homepage'),
+    '#type' => 'checkbox',
+    '#default_value' => 1,
+    '#disabled' => TRUE,
+    '#description' => t('Base page type for all the websites, so you cannot disable it :)'),
+  );
+  $form['content_types']['pt_rich_text_basic_page'] = array(
+    '#title' => t('Basic rich text page'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('rich_text_basic_page', ''),
+    '#description' => t('Simple rich text page with sidebar'),
+  );
+  $form['content_types']['pt_rich_text_page'] = array(
+    '#title' => t('Advanced rich text page'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('rich_text_page', ''),
+    '#description' => t('Rich text page with sidebar and an option to reference content items'),
+  );
+  $form['content_types']['pt_general_overview_page'] = array(
+    '#title' => t('General overview page'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('general_overview_page', ''),
+    '#description' => t('Page with manually filled overview items'),
+  );
+  $form['content_types']['pt_reference_overview_page'] = array(
+    '#title' => t('Reference overview page'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('reference_overview_page', ''),
+    '#description' => t('Page with overview items filled by reference'),
+  );
+  $form['content_types']['pt_faq_page'] = array(
+    '#title' => t('FAQ page'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('faq_page', ''),
+    '#description' => t('FAQ functionality'),
+  );
+
+  $form['content_elements'] = array(
+    '#type' => 'fieldset',
+    '#collapsible' => true,
+    '#collapsed' => true,
+    '#title' => t('Content elements'),
+  );
+  $form['content_elements']['elements_carousel_fixed_background'] = array(
+    '#title' => t('Carousel - CTA'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('carousel_fixed_background', ''),
+    '#description' => t('Carousel with fixed background'),
+  );
+  $form['content_elements']['elements_usp'] = array(
+    '#title' => t('USP block'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('elements_usp', ''),
+    '#description' => t('Three columns USP item with icon and text'),
+  );
+  $form['content_elements']['elements_cta'] = array(
+    '#title' => t('CTA block'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('elements_cta', ''),
+    '#description' => t('Call to action block with text and button'),
+  );
+  $form['content_elements']['elements_case_studies'] = array(
+    '#title' => t('Case studies'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('elements_case_studies', ''),
+    '#description' => t('Four columns block with thumbnail, text and link'),
+  );
+  $form['content_elements']['elements_customer_logos'] = array(
+    '#title' => t('Customer logos carousel'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('elements_customer_logos', ''),
+    '#description' => t('Carousel with customer logos, optionally linked to customer page websites'),
+  );
+  $form['content_elements']['elements_rich_text_media'] = array(
+    '#title' => t('Rich text and media block'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('elements_rich_text_media', ''),
+    '#description' => t('Two columns block (rich text + image/vimeo) with configured media alignment'),
+  );
+  $form['content_elements']['elements_tabs'] = array(
+    '#title' => t('Tabs'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('elements_tabs', ''),
+    '#description' => t('Full-width block with rich text tabs'),
+  );
+  $form['content_elements']['elements_testimonial'] = array(
+    '#title' => t('Testimonial'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('elements_testimonial', ''),
+    '#description' => t('Full-width testimonial item'),
+  );
+
+
+  $form['snippets'] = array(
+    '#type' => 'fieldset',
+    '#collapsible' => true,
+    '#collapsed' => true,
+    '#title' => t('Snippets'),
+  );
+  $form['snippets']['snippet_rich_text'] = array(
+    '#title' => t('Rich text'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('snippet_rich_text', ''),
+    '#description' => t('Basic rich text snippet with title and text'),
+  );
+  $form['snippets']['snippet_banner'] = array(
+    '#title' => t('Banner'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('snippet_banner', ''),
+    '#description' => t('Snippet with an image optionally linked to a page'),
+  );
+  $form['snippets']['snippet_link'] = array(
+    '#title' => t('Links list'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('snippet_link', ''),
+    '#description' => t('Links list with an icon per link and general block title'),
+  );
+
+  $form['#submit'][] = 'colours_installer_install_features';
+  return $form;
+}
+
+function colours_installer_install_features($form, &$form_state) {
+
+}

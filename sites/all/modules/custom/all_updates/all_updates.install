@@ -1,0 +1,56 @@
+<?php
+
+set_time_limit(600);
+
+/**
+* Install modules and settings for all sites
+*/
+function all_updates_install() {
+  $return = array();
+
+  include_once('all_updates.module');
+  
+  // run updates
+  $function_found = true;
+  for($i = 1; $function_found === true; $i++) {
+   $function = "all_updates_update_7" . sprintf("%03d", $i);
+     print_r($function);
+    if (function_exists($function)) {
+      $return_update = $function();
+      $return = array_merge((array)$return, (array)$return_update);
+    }
+    else {
+      $function_found = false;
+    }
+  }
+   
+  return $return;
+  
+}
+
+
+/**
+* Enable/config clean url and default modules 
+*/
+function all_updates_update_7002() {
+  
+  variable_set('clean_url', 1);
+  
+  include_once './includes/install.inc';
+
+  //Refresh module list
+  module_list(TRUE);  
+  // Enable default modules
+  $enablemodules = array(
+    'admin_menu',
+    'features'
+  );
+  $result = module_enable($enablemodules);
+  
+  // Disable modules
+  $disable = array('dashboard', 'overlay', 'shortcut', 'toolbar', 'color');
+  module_disable($disable);
+  
+  return 'enable and disable default modules and settings.';
+
+}

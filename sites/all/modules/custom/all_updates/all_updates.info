@@ -1,0 +1,4 @@
+name = All updates
+core = 7.x
+package = Colours
+description = Module for all database updates

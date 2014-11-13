@@ -1,5 +1,5 @@
 jQuery(function(){
-    var logoColour = jQuery('header .logo a').css('background-color');
+    var logoColour = jQuery('.logo a').css('background-color');
     jQuery('.logo a').hover(
         function() {
             var hue = 'rgb('
@@ -15,4 +15,6 @@ jQuery(function(){
             });
         }
     );
+
+    jQuery('.customer-logo a img:nth-child(2)').addClass('color-img');
 });

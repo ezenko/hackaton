@@ -32,4 +32,4 @@ features[field_instance][] = node-snippet_rich_text-field_snippet_rich_text_titl
 features[node][] = snippet_banner
 features[node][] = snippet_links
 features[node][] = snippet_rich_text
-mtime = 1415927467
+mtime = 1415928433

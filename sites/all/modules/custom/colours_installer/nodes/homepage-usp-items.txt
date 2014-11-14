@@ -1,39 +1,37 @@
 array(
   (object) array(
-      'vid' => '8',
+      'vid' => '4',
       'uid' => '1',
-      'title' => 'Snippet rich text',
+      'title' => 'Homepage USP items',
       'log' => '',
       'status' => '1',
       'comment' => '2',
       'promote' => '1',
       'sticky' => '0',
-      'vuuid' => '635c2bd8-a3d2-47d1-8fa1-895347391fe9',
-      'nid' => '8',
-      'type' => 'snippet_rich_text',
+      'vuuid' => 'e9839933-53d4-4fcd-8ec9-ba44bb7354cd',
+      'nid' => '4',
+      'type' => 'usp_items',
       'language' => 'und',
-      'created' => '1415927919',
-      'changed' => '1415928353',
+      'created' => '1415918202',
+      'changed' => '1415921326',
       'tnid' => '0',
       'translate' => '0',
-      'uuid' => '99a231df-803a-4611-9ac4-ab970b3733c9',
-      'revision_timestamp' => '1415928353',
+      'uuid' => '8f3a4b5a-e4e3-4f5a-b4b4-beb83dab3e92',
+      'revision_timestamp' => '1415921326',
       'revision_uid' => '1',
-      'field_snippet_rich_text' => array(
+      'field_usp_item' => array(
         'und' => array(
           array(
-            'value' => "This excellent state museum has been renovated and now includes a light-bathed extension out the back that features local art from the 1940s to the 1970s. Don't miss Valentin Volkov's socialist realist Minsk on July 3, 1944 (1944–5), depicting the Red Army's arrival in the ruined city. Yudel Pen, Chagall's teacher, is well represented, including his 1914 portrait of Chagall.",
-            'format' => NULL,
-            'safe_value' => 'This excellent state museum has been renovated and now includes a light-bathed extension out the back that features local art from the 1940s to the 1970s. Don&#039;t miss Valentin Volkov&#039;s socialist realist Minsk on July 3, 1944 (1944–5), depicting the Red Army&#039;s arrival in the ruined city. Yudel Pen, Chagall&#039;s teacher, is well represented, including his 1914 portrait of Chagall.',
+            'value' => '4',
+            'revision_id' => '4',
           ),
-        ),
-      ),
-      'field_snippet_rich_text_title' => array(
-        'und' => array(
           array(
-            'value' => 'Belarusian State Art Museum',
-            'format' => NULL,
-            'safe_value' => 'Belarusian State Art Museum',
+            'value' => '5',
+            'revision_id' => '5',
+          ),
+          array(
+            'value' => '6',
+            'revision_id' => '6',
           ),
         ),
       ),
@@ -93,7 +91,7 @@ array(
         ),
       ),
       'cid' => '0',
-      'last_comment_timestamp' => '1415927919',
+      'last_comment_timestamp' => '1415918202',
       'last_comment_name' => NULL,
       'last_comment_uid' => '1',
       'comment_count' => '0',
@@ -101,12 +99,127 @@ array(
       'picture' => '0',
       'data' => 'b:0;',
       'path' => array(
-        'pid' => '8',
-        'source' => 'node/8',
-        'alias' => 'content/snippet-rich-text',
+        'pid' => '4',
+        'source' => 'node/4',
+        'alias' => 'content/homepage-usp-items',
         'language' => 'und',
       ),
       'menu' => NULL,
       'node_export_drupal_version' => '7',
+      'field_collection_deploy' => array(
+        'field_usp_item' => array(
+          array(
+            'item_id' => '4',
+            'revision_id' => '4',
+            'field_name' => 'field_usp_item',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => 'e861bfe5-8e14-42de-ada1-697cacdf976e',
+            'field_usp_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'Connecting people',
+                  'format' => NULL,
+                  'safe_value' => 'Connecting people',
+                ),
+              ),
+            ),
+            'field_usp_intro' => array(
+              'und' => array(
+                array(
+                  'value' => "Fashionable cafes, impressive restaurants and crowded nightclubs vie for your attention, while sushi bars and art galleries have taken up residence in a city centre once totally remodelled to the tastes of Stalin\r\n",
+                  'format' => NULL,
+                  'safe_value' => "Fashionable cafes, impressive restaurants and crowded nightclubs vie for your attention, while sushi bars and art galleries have taken up residence in a city centre once totally remodelled to the tastes of Stalin\r\n",
+                ),
+              ),
+            ),
+            'field_usp_icon' => array(
+              'und' => array(
+                array(
+                  'value' => 'icon-resize-small',
+                  'format' => NULL,
+                  'safe_value' => 'icon-resize-small',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '5',
+            'revision_id' => '5',
+            'field_name' => 'field_usp_item',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => 'b6911bd0-d5ce-41e9-bbd9-689c6dc0fdde',
+            'field_usp_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'Accomodation',
+                  'format' => NULL,
+                  'safe_value' => 'Accomodation',
+                ),
+              ),
+            ),
+            'field_usp_intro' => array(
+              'und' => array(
+                array(
+                  'value' => "Minsk's accommodation scene is generally limited to fusty old Soviet hotels or overpriced four- and five-star places geared to business travellers. A much better option if you're in the city for more than a few days is to rent an apartment. Several agencies offer this service, including Belarus Rent and Belarus Apartment. Rates range from €40 to €100 per night.",
+                  'format' => NULL,
+                  'safe_value' => 'Minsk&#039;s accommodation scene is generally limited to fusty old Soviet hotels or overpriced four- and five-star places geared to business travellers. A much better option if you&#039;re in the city for more than a few days is to rent an apartment. Several agencies offer this service, including Belarus Rent and Belarus Apartment. Rates range from €40 to €100 per night.',
+                ),
+              ),
+            ),
+            'field_usp_icon' => array(
+              'und' => array(
+                array(
+                  'value' => 'icon-lock',
+                  'format' => NULL,
+                  'safe_value' => 'icon-lock',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '6',
+            'revision_id' => '6',
+            'field_name' => 'field_usp_item',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => '329dea8b-f584-4ed7-88f9-4e9e2fb80c06',
+            'field_usp_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'Easy accessible',
+                  'format' => NULL,
+                  'safe_value' => 'Easy accessible',
+                ),
+              ),
+            ),
+            'field_usp_intro' => array(
+              'und' => array(
+                array(
+                  'value' => 'Most international flights use Minsk-2 airport (279 1032), some 40km east of the city off the Moscow highway. A few shorter flights to neighbouring countries use Minsk-1 airport (222 5418), at the end of vul Chkalava, about 3km south of pl Nezalezhnastsi. Flights to Moscow and St Petersburg use both.',
+                  'format' => NULL,
+                  'safe_value' => 'Most international flights use Minsk-2 airport (279 1032), some 40km east of the city off the Moscow highway. A few shorter flights to neighbouring countries use Minsk-1 airport (222 5418), at the end of vul Chkalava, about 3km south of pl Nezalezhnastsi. Flights to Moscow and St Petersburg use both.',
+                ),
+              ),
+            ),
+            'field_usp_icon' => array(
+              'und' => array(
+                array(
+                  'value' => 'icon-plane',
+                  'format' => NULL,
+                  'safe_value' => 'icon-plane',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+        ),
+      ),
     ),
 )

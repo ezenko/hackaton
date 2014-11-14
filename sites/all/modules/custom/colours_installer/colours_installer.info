@@ -1,0 +1,4 @@
+name = Colours installer
+core = 7.x
+package = Colours
+description = Module to configure elements installation

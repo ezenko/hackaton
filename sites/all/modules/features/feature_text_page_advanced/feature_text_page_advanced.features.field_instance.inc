@@ -10,6 +10,46 @@
 function feature_text_page_advanced_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-text_page_advanced-field_text_page_advanced_body'
+  $field_instances['node-text_page_advanced-field_text_page_advanced_body'] = array(
+    'bundle' => 'text_page_advanced',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_text_page_advanced_body',
+    'label' => 'Text page advanced body',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-text_page_advanced-field_text_page_content_items'
   $field_instances['node-text_page_advanced-field_text_page_content_items'] = array(
     'bundle' => 'text_page_advanced',
@@ -49,7 +89,7 @@ function feature_text_page_advanced_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -92,12 +132,13 @@ function feature_text_page_advanced_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Text page advanced body');
   t('Text page content items');
   t('Text page snippets');
 

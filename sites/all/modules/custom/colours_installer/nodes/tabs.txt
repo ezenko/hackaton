@@ -1,0 +1,275 @@
+array(
+  (object) array(
+      'vid' => '8',
+      'uid' => '1',
+      'title' => 'Tabs - Cities',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'bac54aa8-7594-4659-8d12-ac2523f46d46',
+      'nid' => '8',
+      'type' => 'item_tabs',
+      'language' => 'und',
+      'created' => '1415914341',
+      'changed' => '1415914341',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '52224b53-e3a1-4790-824c-495119b4f365',
+      'revision_timestamp' => '1415914341',
+      'revision_uid' => '1',
+      'field_tabs_display_title' => array(
+        'und' => array(
+          array(
+            'value' => 'Cities',
+            'format' => NULL,
+            'safe_value' => 'Cities',
+          ),
+        ),
+      ),
+      'field_tabs' => array(
+        'und' => array(
+          array(
+            'value' => '17',
+            'revision_id' => '17',
+          ),
+          array(
+            'value' => '18',
+            'revision_id' => '18',
+          ),
+          array(
+            'value' => '19',
+            'revision_id' => '19',
+          ),
+          array(
+            'value' => '20',
+            'revision_id' => '20',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1415914341',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'coloursroot',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '8',
+        'source' => 'node/8',
+        'alias' => 'content/tabs-cities',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+      'field_collection_deploy' => array(
+        'field_tabs' => array(
+          array(
+            'item_id' => '17',
+            'revision_id' => '17',
+            'field_name' => 'field_tabs',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => 'f9b49c8c-fd5a-4581-a10b-92b20bd9f161',
+            'field_tab_label' => array(
+              'und' => array(
+                array(
+                  'value' => 'Barysaw',
+                  'format' => NULL,
+                  'safe_value' => 'Barysaw',
+                ),
+              ),
+            ),
+            'field_tab_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'Town on Berezina river',
+                  'format' => NULL,
+                  'safe_value' => 'Town on Berezina river',
+                ),
+              ),
+            ),
+            'field_tab_text' => array(
+              'und' => array(
+                array(
+                  'value' => "Barysaw is first mentioned in the Laurentian Codex as being founded (as Borisov) in 1102 by the Polotsk prince Boris Vseslavovich. During the next couple of centuries it was burned and then rebuilt slightly south of its original location.\r\n\r\nAt the end of the 13th century it became a part of the Grand Duchy of Lithuania. In 1569 (after the Union of Lublin) it became part of the Polish–Lithuanian Commonwealth, and then became part of the Russian Empire in 1793 as a result of the Second Partition of Poland.\r\n\r\nOn 22 January 1796 the town's coat of arms was established (decree #17435) by Stanislaw August, the top half containing the coat of arms of Minsk, while the lower half had two stylized towers on a silver background with a passage between them and Saint Peter above the towers holding a key in his hand. At that time, Barysaw was an uyezd town.\r\n\r\nIn 1812, Barysaw became a crucial location when Napoleon's troops crossed the Berezina river. The French feinted a crossing at the town itself, but successfully escaped the pursuing armies by building two wooden bridges north of the city, at Studianka. This event is reenacted by military locals during town festivals. A cannon from the Napoleonic era is kept by the town's museum.\r\n\r\nIn 1871, the railway between Brest and Moscow passed near Barysaw, and a station was built there. In 1900 the area around the station was annexed the town. In November 1917 the area became a part of the Soviet Union but was occupied by Germany and then Poland from 1918 until 1920 after which the Belarusian Soviet Socialist Republic was established.\r\n\r\nDuring World War II, Barysaw was occupied by Nazi Germany from July 2, 1941, to July 1, 1944, and most of the city was destroyed. More than 33,000 people were killed in six death camps which were constructed around the town.\r\n\r\nSince May 1948 the city has been home to the headquarters of the 7th Tank Army, which became the 65th Army Corps and then the North Western Operational Command of the Armed Forces of Belarus in 2001.",
+                  'format' => 'filtered_html',
+                  'safe_value' => "<p>Barysaw is first mentioned in the Laurentian Codex as being founded (as Borisov) in 1102 by the Polotsk prince Boris Vseslavovich. During the next couple of centuries it was burned and then rebuilt slightly south of its original location.</p>\n<p>At the end of the 13th century it became a part of the Grand Duchy of Lithuania. In 1569 (after the Union of Lublin) it became part of the Polish–Lithuanian Commonwealth, and then became part of the Russian Empire in 1793 as a result of the Second Partition of Poland.</p>\n<p>On 22 January 1796 the town's coat of arms was established (decree #17435) by Stanislaw August, the top half containing the coat of arms of Minsk, while the lower half had two stylized towers on a silver background with a passage between them and Saint Peter above the towers holding a key in his hand. At that time, Barysaw was an uyezd town.</p>\n<p>In 1812, Barysaw became a crucial location when Napoleon's troops crossed the Berezina river. The French feinted a crossing at the town itself, but successfully escaped the pursuing armies by building two wooden bridges north of the city, at Studianka. This event is reenacted by military locals during town festivals. A cannon from the Napoleonic era is kept by the town's museum.</p>\n<p>In 1871, the railway between Brest and Moscow passed near Barysaw, and a station was built there. In 1900 the area around the station was annexed the town. In November 1917 the area became a part of the Soviet Union but was occupied by Germany and then Poland from 1918 until 1920 after which the Belarusian Soviet Socialist Republic was established.</p>\n<p>During World War II, Barysaw was occupied by Nazi Germany from July 2, 1941, to July 1, 1944, and most of the city was destroyed. More than 33,000 people were killed in six death camps which were constructed around the town.</p>\n<p>Since May 1948 the city has been home to the headquarters of the 7th Tank Army, which became the 65th Army Corps and then the North Western Operational Command of the Armed Forces of Belarus in 2001.</p>\n",
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '18',
+            'revision_id' => '18',
+            'field_name' => 'field_tabs',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => '03c934fc-5a50-4b30-baa3-3a8f1f24f597',
+            'field_tab_label' => array(
+              'und' => array(
+                array(
+                  'value' => 'Maladzyechna',
+                  'format' => NULL,
+                  'safe_value' => 'Maladzyechna',
+                ),
+              ),
+            ),
+            'field_tab_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'City that will stay forever',
+                  'format' => NULL,
+                  'safe_value' => 'City that will stay forever',
+                ),
+              ),
+            ),
+            'field_tab_text' => array(
+              'und' => array(
+                array(
+                  'value' => "The fortification on the right bank of the Usha was first mentioned in 1388, although it is probable it was erected even before that date. Rectangular earthworks with stone walls 3,5 metres high and 11 metres wide formed the basis of the future castles and military camps formed on that location.[3] The town itself was first mentioned the following year in a document issued by Kaributas, Prince of Severian Novgorod, who on December 16 assured his tributary fidelity to his cousin, King Jogaila and Jadwiga of Poland.\r\n\r\nIn 1501 the place was donated by King Sigismund I the Old to certain Michael of Mstislav, on the condition that the latter provided a safe river passage for the nobles and hunters dwelling in the area. The privilege was further confirmed on July 12, 1511[4]\r\n\r\nAfter Michael's heirless death, the locality passed through different hands until finally in 1567 it was acquired by Prince Nastasi Zbaraski, the voivod of Trakai. In 1568, that is the following year, a battle took place in the vicinity of the castle, in which the 40,000 men strong army of the Polish-Lithuanian Commonwealth defeated the forces of Muscovy. In 1617 it was bought by Lew Sapieha, the Grand Chancellor of Lithuania. Around that time the village had 1000 inhabitants. On August 20, 1631 Sapieha sold it to Stanisław Siemiott, the chamberlain of Samogitia, who then divided the villages surrounding Maladzyechna among his sons. Following a testament conflict between the descendantd of Siemiott and Aleksander Gosiewski, the Voivod of Smolensk, the town remained a property of the Gosiewski family. During their ownership of Maladzyechna the fortifications were extended and strengthened significantly by addition of several bastions. Around that time Maladzyechna started to be referred to as a town, even though it was officially a village and was not granted with a city charter. Nevertheless, it served as a centre of trade and commerce for the surrounding villages and also gained significant profits from transit between Lithuania and Poland. In 1708 the castle was one of the headquarters of the Swedish Army of King Charles XII of Sweden, which led to its partial devastation in the effect of a battle between the Swedes and the Russian forces.",
+                  'format' => 'filtered_html',
+                  'safe_value' => "<p>The fortification on the right bank of the Usha was first mentioned in 1388, although it is probable it was erected even before that date. Rectangular earthworks with stone walls 3,5 metres high and 11 metres wide formed the basis of the future castles and military camps formed on that location.[3] The town itself was first mentioned the following year in a document issued by Kaributas, Prince of Severian Novgorod, who on December 16 assured his tributary fidelity to his cousin, King Jogaila and Jadwiga of Poland.</p>\n<p>In 1501 the place was donated by King Sigismund I the Old to certain Michael of Mstislav, on the condition that the latter provided a safe river passage for the nobles and hunters dwelling in the area. The privilege was further confirmed on July 12, 1511[4]</p>\n<p>After Michael's heirless death, the locality passed through different hands until finally in 1567 it was acquired by Prince Nastasi Zbaraski, the voivod of Trakai. In 1568, that is the following year, a battle took place in the vicinity of the castle, in which the 40,000 men strong army of the Polish-Lithuanian Commonwealth defeated the forces of Muscovy. In 1617 it was bought by Lew Sapieha, the Grand Chancellor of Lithuania. Around that time the village had 1000 inhabitants. On August 20, 1631 Sapieha sold it to Stanisław Siemiott, the chamberlain of Samogitia, who then divided the villages surrounding Maladzyechna among his sons. Following a testament conflict between the descendantd of Siemiott and Aleksander Gosiewski, the Voivod of Smolensk, the town remained a property of the Gosiewski family. During their ownership of Maladzyechna the fortifications were extended and strengthened significantly by addition of several bastions. Around that time Maladzyechna started to be referred to as a town, even though it was officially a village and was not granted with a city charter. Nevertheless, it served as a centre of trade and commerce for the surrounding villages and also gained significant profits from transit between Lithuania and Poland. In 1708 the castle was one of the headquarters of the Swedish Army of King Charles XII of Sweden, which led to its partial devastation in the effect of a battle between the Swedes and the Russian forces.</p>\n",
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '19',
+            'revision_id' => '19',
+            'field_name' => 'field_tabs',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => '176cd425-127b-45f5-912a-75788d1af4c5',
+            'field_tab_label' => array(
+              'und' => array(
+                array(
+                  'value' => 'Orsha',
+                  'format' => NULL,
+                  'safe_value' => 'Orsha',
+                ),
+              ),
+            ),
+            'field_tab_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'One of the oldest towns',
+                  'format' => NULL,
+                  'safe_value' => 'One of the oldest towns',
+                ),
+              ),
+            ),
+            'field_tab_text' => array(
+              'und' => array(
+                array(
+                  'value' => "Orsha was first mentioned in 1067 as Rsha (Russian: Рша), making it one of the oldest towns in Belarus. The town was named after the river, which was originally also named Rsha, probably from a Baltic root *rus 'slowly flowing.'[2]\r\n\r\nIn 1320, Orsha became a part of the Grand Duchy of Lithuania. In 1398-1407, the Orsha castle was built. On September 8, 1514 the famous Battle of Orsha occurred, between allied Grand Duchy of Lithuania with Kingdom of Poland and Russian army.[3] Russians suffered significant defeat, however victorious Grand Duchy of Lithuania did not fully avail its victory.[3]\r\n\r\nIn 1555, Mikołaj \"Czarny\" Radziwiłł founded a Calvinist (Protestant) order in Orsha, one of the first in the Belarusian lands. From the sixteenth to eighteenth centuries Orsha was a notable religious centre, with dozens of Orthodox, Protestant and Catholic churches and orders. The town was also home to a large Jewish population.\r\n\r\nOrsha was granted Magdeburg Rights in 1620. In 1630, S. Sobal opened the first printing house at the Kuciejna monastery, which became a well-known centre of Cyrillic-alphabet publishing. The town was damaged during the Russo-Polish War (1654-1667), which was a disaster for Grand Duchy of Lithuania. During the First Polish partition the city was taken over by the Russian Empire in 1772, and became part of the Mogilyov Gubernia. Under Russian rule, it was stripped of its Magdeburg Rights in 1776 and went into cultural and economic decline.[citation needed] The population dropped sharply to just about 2,000 inhabitants.[citation needed] The city symbol in 1781 was changed to one which included the symbol of the Russian empire and five arrows.\r\n\r\n\r\nOrsha. Orthodox church of Saint Illa (1880).\r\n\r\nDuring Napoleon's invasion the French writer Stendhal served in Orsha in the rank of intendant\r\nIn 1812, the city was badly burned during Napoleon's invasion. At the time of Orsha had been taken under control of French troops, there was a French writer Marie-Henri Beyle (also known under the pen name Stendhal) in a rank of intendant.[4]\r\n\r\nDuring the First World War, the city was occupied by German forces in February–October 1918. From February 2, 1919, Orsha became a part of Homyel region (Vitebsk region, 1920) of Soviet Russia. After the formation of the Soviet Union, it was transferred to the Byelorussian SSR in 1924.\r\n\r\nThe population before World War II was about 37,000. The city was occupied by Germany on July 16, 1941. The occupiers founded several concentration camps in the city, where an estimated 19,000 people were killed.[citation needed]\r\n\r\nThere is a widespread Soviet myth of Katyusha Katyusha multiple rocket launcher's maiden attack of July 14, 1941 at Orsha, destroying a station with several supply trains. This legend obviously conflicts the fact that Orsha remained at the hands of the Soviet Army on July 14 and through July 15, 1941. And even on July 16, 1941 the German troops were unlikely to invade Orsha aboard their supply trains. Thus, had the Katyusha’s rockets fallen on any supply trains on July 16, 1941 those would have been the Soviet trains unable to have left Orsha railroad station. See Russian Wikipedia's article \"Гвардейские реактивные минометы\" (\"Guards Mortars\"). The multiple rocket launchers were top secret in the beginning of World War II and any records of their actions in July 1941 were forbidden, which fact led to numerous rumors and myths. The Soviets encouraged and co-ordinated undercover anti-fascist resistance groups, and one of the most famous was a partisan brigade under the command of Kanstantsin Zaslonau (Konstantin Zaslonov), operating from the Orsha train depot. His group planted ninety-three bombs on German trains in just three months. After March 1942, he went in hiding in the forests, where he and his group continued guerilla warfare. He was killed in action on November 14, 1942. Soviet troops liberated Orsha on June 27, 1944.",
+                  'format' => 'filtered_html',
+                  'safe_value' => "<p>Orsha was first mentioned in 1067 as Rsha (Russian: Рша), making it one of the oldest towns in Belarus. The town was named after the river, which was originally also named Rsha, probably from a Baltic root *rus 'slowly flowing.'[2]</p>\n<p>In 1320, Orsha became a part of the Grand Duchy of Lithuania. In 1398-1407, the Orsha castle was built. On September 8, 1514 the famous Battle of Orsha occurred, between allied Grand Duchy of Lithuania with Kingdom of Poland and Russian army.[3] Russians suffered significant defeat, however victorious Grand Duchy of Lithuania did not fully avail its victory.[3]</p>\n<p>In 1555, Mikołaj \"Czarny\" Radziwiłł founded a Calvinist (Protestant) order in Orsha, one of the first in the Belarusian lands. From the sixteenth to eighteenth centuries Orsha was a notable religious centre, with dozens of Orthodox, Protestant and Catholic churches and orders. The town was also home to a large Jewish population.</p>\n<p>Orsha was granted Magdeburg Rights in 1620. In 1630, S. Sobal opened the first printing house at the Kuciejna monastery, which became a well-known centre of Cyrillic-alphabet publishing. The town was damaged during the Russo-Polish War (1654-1667), which was a disaster for Grand Duchy of Lithuania. During the First Polish partition the city was taken over by the Russian Empire in 1772, and became part of the Mogilyov Gubernia. Under Russian rule, it was stripped of its Magdeburg Rights in 1776 and went into cultural and economic decline.[citation needed] The population dropped sharply to just about 2,000 inhabitants.[citation needed] The city symbol in 1781 was changed to one which included the symbol of the Russian empire and five arrows.</p>\n<p>Orsha. Orthodox church of Saint Illa (1880).</p>\n<p>During Napoleon's invasion the French writer Stendhal served in Orsha in the rank of intendant<br />\nIn 1812, the city was badly burned during Napoleon's invasion. At the time of Orsha had been taken under control of French troops, there was a French writer Marie-Henri Beyle (also known under the pen name Stendhal) in a rank of intendant.[4]</p>\n<p>During the First World War, the city was occupied by German forces in February–October 1918. From February 2, 1919, Orsha became a part of Homyel region (Vitebsk region, 1920) of Soviet Russia. After the formation of the Soviet Union, it was transferred to the Byelorussian SSR in 1924.</p>\n<p>The population before World War II was about 37,000. The city was occupied by Germany on July 16, 1941. The occupiers founded several concentration camps in the city, where an estimated 19,000 people were killed.[citation needed]</p>\n<p>There is a widespread Soviet myth of Katyusha Katyusha multiple rocket launcher's maiden attack of July 14, 1941 at Orsha, destroying a station with several supply trains. This legend obviously conflicts the fact that Orsha remained at the hands of the Soviet Army on July 14 and through July 15, 1941. And even on July 16, 1941 the German troops were unlikely to invade Orsha aboard their supply trains. Thus, had the Katyusha’s rockets fallen on any supply trains on July 16, 1941 those would have been the Soviet trains unable to have left Orsha railroad station. See Russian Wikipedia's article \"Гвардейские реактивные минометы\" (\"Guards Mortars\"). The multiple rocket launchers were top secret in the beginning of World War II and any records of their actions in July 1941 were forbidden, which fact led to numerous rumors and myths. The Soviets encouraged and co-ordinated undercover anti-fascist resistance groups, and one of the most famous was a partisan brigade under the command of Kanstantsin Zaslonau (Konstantin Zaslonov), operating from the Orsha train depot. His group planted ninety-three bombs on German trains in just three months. After March 1942, he went in hiding in the forests, where he and his group continued guerilla warfare. He was killed in action on November 14, 1942. Soviet troops liberated Orsha on June 27, 1944.</p>\n",
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '20',
+            'revision_id' => '20',
+            'field_name' => 'field_tabs',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => 'f22f9043-50ee-4690-a814-b5cc4f9b2c90',
+            'field_tab_label' => array(
+              'und' => array(
+                array(
+                  'value' => 'Gomel',
+                  'format' => NULL,
+                  'safe_value' => 'Gomel',
+                ),
+              ),
+            ),
+            'field_tab_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'The eastern pearl',
+                  'format' => NULL,
+                  'safe_value' => 'The eastern pearl',
+                ),
+              ),
+            ),
+            'field_tab_text' => array(
+              'und' => array(
+                array(
+                  'value' => "In 1335 Gomel region was joined to the Great Duchy of Lithuania by Algirdas. In 1335–1406 it was under the ownership of prince Patrikiy Narymuntovich and his sons, in 1406–1419 the city was ruled by Great Duke's deputies, in 1419–1435 it belonged to prince Svitrigaila, in 1446–1452 to prince Vasiliy Yaroslavich, in 1452–1483 to Mozhaysk prince Ivan Andreyevich, in 1483–1505 to his son Semyon, who transferred Gomel to the Grand Duchy of Moscow. During the Second Muscovite-Lithuanian War of 1500–1503 Lithuania tried to return Gomel and other lands, transferred to Moscow, but suffered defeat and lost one third of its territory. In 1535 Lithuanian forces under Yu. Radzivill, Ya. Tarnovskiy and A. Nemira re-captured Gomel after the surrender of Moscow's deputy, D. Shchepin-Obolenskiy. In the same year Great Duke of Lithuania Sigismund Kęstutaitis founded the Gomel Starostwo. In reference to the peace agreement of 1537 Gomel together with its volost remained a Lithuanian possession. In 1535–1565 Gomel is the centre of starostwo, from 1565 Gomel is in the Rechitsa Powiat of the Minsk Voivodeship. In 1560 the city's first coat of arms was introduced. In 1569 Gomel became part of the Polish-Lithuanian Commonwealth. From this moment the city has become the arena of numerous attacks and battles between Cossaks, Russia and Polish-Lithuania Commonwealth. In 1572 Gomel Starostwo was given to B. Sapega. At the beginning of 1570s Gomel was captured by the forces of Ivan the Terrible, but in 1576 it was re-captured by J. Radziwiłł. In 1581 Gomel was again attacked by Russian troops, and in 1595–1596 it was in the hands of Severyn Nalyvaiko's Cossaks. After the beginning of struggle against the Orthodox Christianity in Lithuania the Orthodox Nikolayevskiy Cathedral was closed by the order of Greek Catholic Eparch Josaphat Kuntsevych in 1621. In 1633 the city was besieged by the Cossaks of Bulgakov and Yermolin, in 1648 was captured by the Golovatskiy's Cossak detachment, in 1649 by Martyn Nebaba's detachment. After that Gomel got through several besieges in 1651 but in 1564 was captured by Ivan Zolotarenko's detachment. He and his sons had been holding the city till 1667 and then they began to serve under Alexis of Russia, however, after the Truce of Andrusovo Gomel at last returned to the Polish-Lithuanian Commonwealth, where it firth belonged to M. K. Radziwiłł (Radzivll) and then till the annexation by the Russian Empire – to the Czartoryski family. During the Great Northern War Russian forces under Aleksandr Danilovich Menshikov stood in Gomel. In 1670 Gomel got the Magdeburg rights. Towards the middle of the 17th century the city came to crisis mainly due to struggles mention above. It suffered a lot of damage, population severely decreased, a lot of crafts disappeared.",
+                  'format' => 'filtered_html',
+                  'safe_value' => "<p>In 1335 Gomel region was joined to the Great Duchy of Lithuania by Algirdas. In 1335–1406 it was under the ownership of prince Patrikiy Narymuntovich and his sons, in 1406–1419 the city was ruled by Great Duke's deputies, in 1419–1435 it belonged to prince Svitrigaila, in 1446–1452 to prince Vasiliy Yaroslavich, in 1452–1483 to Mozhaysk prince Ivan Andreyevich, in 1483–1505 to his son Semyon, who transferred Gomel to the Grand Duchy of Moscow. During the Second Muscovite-Lithuanian War of 1500–1503 Lithuania tried to return Gomel and other lands, transferred to Moscow, but suffered defeat and lost one third of its territory. In 1535 Lithuanian forces under Yu. Radzivill, Ya. Tarnovskiy and A. Nemira re-captured Gomel after the surrender of Moscow's deputy, D. Shchepin-Obolenskiy. In the same year Great Duke of Lithuania Sigismund Kęstutaitis founded the Gomel Starostwo. In reference to the peace agreement of 1537 Gomel together with its volost remained a Lithuanian possession. In 1535–1565 Gomel is the centre of starostwo, from 1565 Gomel is in the Rechitsa Powiat of the Minsk Voivodeship. In 1560 the city's first coat of arms was introduced. In 1569 Gomel became part of the Polish-Lithuanian Commonwealth. From this moment the city has become the arena of numerous attacks and battles between Cossaks, Russia and Polish-Lithuania Commonwealth. In 1572 Gomel Starostwo was given to B. Sapega. At the beginning of 1570s Gomel was captured by the forces of Ivan the Terrible, but in 1576 it was re-captured by J. Radziwiłł. In 1581 Gomel was again attacked by Russian troops, and in 1595–1596 it was in the hands of Severyn Nalyvaiko's Cossaks. After the beginning of struggle against the Orthodox Christianity in Lithuania the Orthodox Nikolayevskiy Cathedral was closed by the order of Greek Catholic Eparch Josaphat Kuntsevych in 1621. In 1633 the city was besieged by the Cossaks of Bulgakov and Yermolin, in 1648 was captured by the Golovatskiy's Cossak detachment, in 1649 by Martyn Nebaba's detachment. After that Gomel got through several besieges in 1651 but in 1564 was captured by Ivan Zolotarenko's detachment. He and his sons had been holding the city till 1667 and then they began to serve under Alexis of Russia, however, after the Truce of Andrusovo Gomel at last returned to the Polish-Lithuanian Commonwealth, where it firth belonged to M. K. Radziwiłł (Radzivll) and then till the annexation by the Russian Empire – to the Czartoryski family. During the Great Northern War Russian forces under Aleksandr Danilovich Menshikov stood in Gomel. In 1670 Gomel got the Magdeburg rights. Towards the middle of the 17th century the city came to crisis mainly due to struggles mention above. It suffered a lot of damage, population severely decreased, a lot of crafts disappeared.</p>\n",
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+        ),
+      ),
+    ),
+)

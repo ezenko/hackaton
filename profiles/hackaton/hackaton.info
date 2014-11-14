@@ -31,5 +31,11 @@ dependencies[] = pathauto
 dependencies[] = references
 dependencies[] = token
 dependencies[] = user_reference
+dependencies[] = ckeditor
+dependencies[] = ckeditor_link
+dependencies[] = uuid
+dependencies[] = node_export
+dependencies[] = node_export_features
+dependencies[] = field_collection_deploy
 
 dependencies[] = colours_installer

@@ -12,4 +12,12 @@
 function hackaton_form_install_configure_form_alter(&$form, $form_state) {
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = $_SERVER['SERVER_NAME'];
+  $form['#submit'][] = 'hackaton_redirect_configure';
+}
+
+function hackaton_redirect_configure($form, &$form_state) {
+  $form_state['rebuild'] = TRUE;
+  $form_state['redirect'] = 'admin/config/elements';
+
+  drupal_goto('admin/config/elements');
 }

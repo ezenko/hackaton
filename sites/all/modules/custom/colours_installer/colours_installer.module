@@ -11,7 +11,7 @@ function colours_installer_menu() {
     'title' => t('Configure website elements'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('colours_installer_settings_form'),
-    'access arguments' => array('administer site settings'),
+    'access arguments' => array('access content'),
   );
 
   return $items;
@@ -38,31 +38,31 @@ function colours_installer_settings_form() {
   $form['content_types']['pt_rich_text_basic_page'] = array(
     '#title' => t('Basic rich text page'),
     '#type' => 'checkbox',
-    '#default_value' => variable_get('rich_text_basic_page', ''),
+    '#default_value' => variable_get('pt_rich_text_basic_page', ''),
     '#description' => t('Simple rich text page with sidebar'),
   );
   $form['content_types']['pt_rich_text_page'] = array(
     '#title' => t('Advanced rich text page'),
     '#type' => 'checkbox',
-    '#default_value' => variable_get('rich_text_page', ''),
+    '#default_value' => variable_get('pt_rich_text_page', ''),
     '#description' => t('Rich text page with sidebar and an option to reference content items'),
   );
   $form['content_types']['pt_general_overview_page'] = array(
     '#title' => t('General overview page'),
     '#type' => 'checkbox',
-    '#default_value' => variable_get('general_overview_page', ''),
+    '#default_value' => variable_get('pt_general_overview_page', ''),
     '#description' => t('Page with manually filled overview items'),
   );
   $form['content_types']['pt_reference_overview_page'] = array(
     '#title' => t('Reference overview page'),
     '#type' => 'checkbox',
-    '#default_value' => variable_get('reference_overview_page', ''),
+    '#default_value' => variable_get('pt_reference_overview_page', ''),
     '#description' => t('Page with overview items filled by reference'),
   );
   $form['content_types']['pt_faq_page'] = array(
     '#title' => t('FAQ page'),
     '#type' => 'checkbox',
-    '#default_value' => variable_get('faq_page', ''),
+    '#default_value' => variable_get('pt_faq_page', ''),
     '#description' => t('FAQ functionality'),
   );
 
@@ -75,7 +75,7 @@ function colours_installer_settings_form() {
   $form['content_elements']['elements_carousel_fixed_background'] = array(
     '#title' => t('Carousel - CTA'),
     '#type' => 'checkbox',
-    '#default_value' => variable_get('carousel_fixed_background', ''),
+    '#default_value' => variable_get('elements_carousel_fixed_background', ''),
     '#description' => t('Carousel with fixed background'),
   );
   $form['content_elements']['elements_usp'] = array(
@@ -147,10 +147,85 @@ function colours_installer_settings_form() {
     '#description' => t('Links list with an icon per link and general block title'),
   );
 
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Install'),
+  );
+
   $form['#submit'][] = 'colours_installer_install_features';
-  return $form;
+  return system_settings_form($form);
 }
 
 function colours_installer_install_features($form, &$form_state) {
+  $types = array();
 
+  if ($form_state['values']['elements_carousel_fixed_background']) {
+    module_enable(array('feature_slider'));
+  }
+
+  if ($form_state['values']['elements_case_studies']) {
+    module_enable(array('feature_case_studies'));
+    $types[] = 'case-studies.txt';
+  }
+
+  if ($form_state['values']['elements_customer_logos']) {
+    module_enable(array('feature_customers_logos'));
+    $types[] = 'customers.txt';
+  }
+
+  if ($form_state['values']['elements_rich_text_media']) {
+    module_enable(array('feature_rich_text_media'));
+    $types[] = 'rich_text_media.txt';
+  }
+
+  if ($form_state['values']['elements_tabs']) {
+    module_enable(array('feature_tabs'));
+    $types[] = 'tabs.txt';
+  }
+
+  if ($form_state['values']['elements_testimonial']) {
+    module_enable(array('feature_testimonial'));
+    $types[] = 'testimonial.txt';
+  }
+
+  if ($form_state['values']['elements_usp']) {
+    module_enable(array('feature_usp_items'));
+  }
+
+  if ($form_state['values']['elements_cta']) {
+    module_enable(array('feature_cta_block'));
+  }
+
+  if ($form_state['values']['snippet_rich_text']) {
+    module_enable(array('feature_snippets'));
+  }
+
+  if ($form_state['values']['snippet_banner']) {
+    module_enable(array('feature_snippets'));
+  }
+
+  if ($form_state['values']['snippet_link']) {
+    module_enable(array('feature_snippets'));
+  }
+
+  module_enable(array('feature_homepage'));
+
+  if ($form_state['values']['pt_rich_text_page']) {
+    module_enable(array('feature_text_page_advanced'));
+  }
+
+  if ($form_state['values']['pt_rich_text_basic_page']) {
+    module_enable(array('feature_text_page_basic'));
+  }
+
+  colours_installer_import_content($types);
+}
+
+function colours_installer_import_content($types) {
+  node_types_rebuild();
+
+  foreach ($types as $file) {
+    $string = file_get_contents(drupal_get_path('module', 'colours_installer') . '/nodes/' . $file);
+    $result = node_export_import($string);
+  }
 }

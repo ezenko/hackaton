@@ -1,0 +1,154 @@
+array(
+  (object) array(
+      'vid' => '7',
+      'uid' => '1',
+      'title' => 'Rich text media - National library',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'b0ade9ca-bc0d-4353-b8b3-028f9ccc8923',
+      'nid' => '7',
+      'type' => 'item_rich_text_and_media',
+      'language' => 'und',
+      'created' => '1415910368',
+      'changed' => '1415927749',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '91029fb5-eb7e-4313-8071-9dfed070966f',
+      'revision_timestamp' => '1415927749',
+      'revision_uid' => '1',
+      'field_rtm_display_title' => array(
+        'und' => array(
+          array(
+            'value' => 'National library',
+            'format' => NULL,
+            'safe_value' => 'National library',
+          ),
+        ),
+      ),
+      'field_rtm_text' => array(
+        'und' => array(
+          array(
+            'value' => "The National Library of Belarus (Belarusian: Нацыянальная бібліятэка Беларусі, Russian: Национальная библиотека Беларуси), founded on 15 September 1922, is a copyright library of the Republic of Belarus. It houses the largest collection of Belarusian printed materials and the third largest collection of books in Russian behind the Russian State Library (Moscow) and the Russian National Library (St Petersburg).\r\n\r\nIt is now located in a new 72-metre (236 feet) high building in Minsk, Belarus. The building has 22 floors and was completed in January 2006. The building can seat about 2,000 readers and features a 500-seat conference hall. Its main architectural component has the shape of a rhombicuboctahedron. The library's new building was designed by architects Mihail Vinogradov and Viktor Kramarenko and opened on 16 June 2006.",
+            'format' => 'filtered_html',
+            'safe_value' => "<p>The National Library of Belarus (Belarusian: Нацыянальная бібліятэка Беларусі, Russian: Национальная библиотека Беларуси), founded on 15 September 1922, is a copyright library of the Republic of Belarus. It houses the largest collection of Belarusian printed materials and the third largest collection of books in Russian behind the Russian State Library (Moscow) and the Russian National Library (St Petersburg).</p>\n<p>It is now located in a new 72-metre (236 feet) high building in Minsk, Belarus. The building has 22 floors and was completed in January 2006. The building can seat about 2,000 readers and features a 500-seat conference hall. Its main architectural component has the shape of a rhombicuboctahedron. The library's new building was designed by architects Mihail Vinogradov and Viktor Kramarenko and opened on 16 June 2006.</p>\n",
+          ),
+        ),
+      ),
+      'field_rtm_image' => array(
+        'und' => array(
+          array(
+            'fid' => NULL,
+            'uid' => '1',
+            'filename' => 'MAG-20131121-073.jpg',
+            'uri' => 'public://MAG-20131121-073.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '433759',
+            'status' => '1',
+            'timestamp' => '1415927746',
+            'type' => 'image',
+            'uuid' => '87ad28a0-0e82-482a-be36-45b32f1b36c2',
+            'rdf_mapping' => array(),
+            'image_dimensions' => array(
+              'width' => '900',
+              'height' => '600',
+            ),
+            'alt' => NULL,
+            'title' => NULL,
+            'width' => '900',
+            'height' => '600',
+            'node_export_file_path' => 'public://MAG-20131121-073.jpg',
+          ),
+        ),
+      ),
+      'field_rtm_vimeo_link' => array(
+        'und' => array(
+          array(
+            'value' => 'http://player.vimeo.com/video/98708139',
+            'format' => NULL,
+            'safe_value' => 'http://player.vimeo.com/video/98708139',
+          ),
+        ),
+      ),
+      'field_rtm_media_alignment' => array(
+        'und' => array(
+          array(
+            'value' => 'left',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1415910368',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'coloursroot',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '7',
+        'source' => 'node/7',
+        'alias' => 'content/rich-text-media-national-library',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

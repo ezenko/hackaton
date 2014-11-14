@@ -69,6 +69,8 @@ function hackaton_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
+  theme_enable(array('hackaton'));
+  variable_set('theme_default', 'hackaton');
   $default_theme = variable_get('theme_default', 'hackaton');
   $admin_theme = 'seven';
 
@@ -168,4 +170,6 @@ function hackaton_install() {
     ->execute();
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
+
+  //drupal_goto('admin/config/elements');
 }

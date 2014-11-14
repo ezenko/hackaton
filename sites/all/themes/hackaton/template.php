@@ -27,29 +27,42 @@ function hackaton_menu_link($variables) {
   if ($element['#below']) {
     $sub_menu = drupal_render($element['#below']);
   }
-  if (!empty($element['#attributes']['class']) && in_array('active-trail', $element['#attributes']['class'])) {
-    $element['#attributes']['class'][] = 'active';
-  }
-  if ($sub_menu) {
-    $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
 
-    $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
-    $element['#localized_options']['html'] = true;
-
-    $output = '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $element['#title'] . '<b class="caret"></b></a>';
-  } else {
+  if ($element['#theme'] == 'menu_link__menu_service_menu') {
+    $element['#localized_options']['attributes']['class'] = array('login-btn');
     $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+
+    return '<li>' . $output . $sub_menu . "</li><li class='devider'></li>\n";
+  } else {
+    if (!empty($element['#attributes']['class']) && in_array('active-trail', $element['#attributes']['class'])) {
+      $element['#attributes']['class'][] = 'active';
+    }
+    if ($sub_menu) {
+      $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
+
+      $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+      $element['#localized_options']['html'] = true;
+
+      $output = '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $element['#title'] . '<b class="caret"></b></a>';
+    } else {
+      $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+    }
+
+    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . str_replace('nav top-2', 'dropdown-menu', $sub_menu) . "<b class='caret-out'></b></li>\n";
   }
 
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . str_replace('nav top-2', 'dropdown-menu', $sub_menu) . "<b class='caret-out'></b></li>\n";
 }
 
 function hackaton_preprocess_page(&$variables) {
   
   $menu_tree =  menu_tree_page_data('main-menu');
   $footer_menu_tree =  menu_tree_page_data('menu-footer');
+  $service_menu_tree =  menu_tree_page_data('menu-service-menu');
+
   $variables['main_menu'] = menu_tree_output($menu_tree);
   $variables['footer_menu'] = menu_tree_output($footer_menu_tree);
+  $variables['service_menu'] = menu_tree_output($service_menu_tree);
+
   $variables['copyright'] = variable_get('copyright_text', '© Hoom');
   $variables['footer_nav'] = menu_tree('menu-footer');
   $variables['page_backgrnd'] = NULL;

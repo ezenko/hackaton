@@ -1,0 +1,11 @@
+name = Service menu
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-service-menu
+features[menu_links][] = menu-service-menu_colours:http://colours.nl
+features[menu_links][] = menu-service-menu_drupal:http://drupal.org
+features[menu_links][] = menu-service-menu_login:user
+mtime = 1415963918

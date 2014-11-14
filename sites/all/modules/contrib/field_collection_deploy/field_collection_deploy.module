@@ -174,9 +174,32 @@ function field_collection_deploy_import_field_collection($node, $field_collectio
       $entity_controller = new EntityAPIController("field_collection_item");
       $item['item_id'] = NULL;
       $item['original'] = TRUE;
+
+      // IMPORT IMAGES
+      foreach ($item as $key => $field) {
+        if(is_array($field) && !empty($field[LANGUAGE_NONE]) && !empty($field[LANGUAGE_NONE][0]['fid'])) {
+          $url = drupal_realpath($field[LANGUAGE_NONE][0]['uri']);
+          $file_data = file_get_contents($url);
+          if ($file_data) {
+            $file = file_save_data($file_data, $field[LANGUAGE_NONE][0]['uri'], FILE_EXISTS_REPLACE);
+
+            db_update('file_managed')
+              ->fields(array('status' => 1))
+              ->condition('fid', $file->fid, '=')
+              ->execute();
+
+            $item[$key][LANGUAGE_NONE][0]['fid'] = $file->fid;
+            $item[$key][LANGUAGE_NONE][0]['uuid'] = $file->uuid;
+
+          }
+        }
+      }
+
+
       $item_encoded = drupal_json_encode($item);
 
       $entity = $entity_controller->import($item_encoded);
+      //var_dump($entity, $entity->field_case_studies_item_image); exit;
       $saved = $entity_controller->save($entity);
 
       // Can't find a way to get the entity's item_id via the API.

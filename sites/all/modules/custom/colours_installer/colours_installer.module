@@ -223,9 +223,21 @@ function colours_installer_install_features($form, &$form_state) {
 
 function colours_installer_import_content($types) {
   node_types_rebuild();
-
+  $content_items = '';
+  //import all referenced content type
   foreach ($types as $file) {
     $string = file_get_contents(drupal_get_path('module', 'colours_installer') . '/nodes/' . $file);
     $result = node_export_import($string);
+    $nids = $result['nids'];
+    $content_items .= "array(
+                          'nid' => '" . $nids[0] . "',
+                        ),";
   }
+
+  //import homepage
+  $string = file_get_contents(drupal_get_path('module', 'colours_installer') . '/nodes/homepage.txt');
+  $string = str_replace('{content_items}', $content_items, $string);
+  //var_dump($string)
+  $result = node_export_import($string);
+
 }

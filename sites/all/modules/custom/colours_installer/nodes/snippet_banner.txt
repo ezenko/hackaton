@@ -1,0 +1,128 @@
+array(
+  (object) array(
+      'vid' => '7',
+      'uid' => '1',
+      'title' => 'Snippet banner',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '0485f9aa-03af-44a6-8fb7-6237c735e8d5',
+      'nid' => '7',
+      'type' => 'snippet_banner',
+      'language' => 'und',
+      'created' => '1415927094',
+      'changed' => '1415927094',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'a33a0f88-67fc-48f8-ade0-9e8b6126f3d5',
+      'revision_timestamp' => '1415927094',
+      'revision_uid' => '1',
+      'field_snippet_banner' => array(
+        'und' => array(
+          array(
+            'fid' => '4',
+            'uid' => '1',
+            'filename' => 'Belarus-Minsk-BSPU-Main_Building.jpg',
+            'uri' => 'public://Belarus-Minsk-BSPU-Main_Building.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '907272',
+            'status' => '1',
+            'timestamp' => '1415927038',
+            'type' => 'image',
+            'uuid' => '65eec0e1-5498-4ba2-b9aa-1ddc9f00160f',
+            'rdf_mapping' => array(),
+            'image_dimensions' => array(
+              'width' => '1712',
+              'height' => '2288',
+            ),
+            'alt' => NULL,
+            'title' => NULL,
+            'width' => '1712',
+            'height' => '2288',
+          ),
+        ),
+      ),
+      'field_snippet_banner_link' => array(
+        'und' => array(
+          array(
+            'value' => 'http://www.mapsofworld.com/belarus/independence-day.html',
+            'format' => NULL,
+            'safe_value' => 'http://www.mapsofworld.com/belarus/independence-day.html',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1415927094',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '7',
+        'source' => 'node/7',
+        'alias' => 'content/snippet-banner',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

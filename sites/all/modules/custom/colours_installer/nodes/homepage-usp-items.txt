@@ -1,0 +1,112 @@
+array(
+  (object) array(
+      'vid' => '8',
+      'uid' => '1',
+      'title' => 'Snippet rich text',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '635c2bd8-a3d2-47d1-8fa1-895347391fe9',
+      'nid' => '8',
+      'type' => 'snippet_rich_text',
+      'language' => 'und',
+      'created' => '1415927919',
+      'changed' => '1415928353',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '99a231df-803a-4611-9ac4-ab970b3733c9',
+      'revision_timestamp' => '1415928353',
+      'revision_uid' => '1',
+      'field_snippet_rich_text' => array(
+        'und' => array(
+          array(
+            'value' => "This excellent state museum has been renovated and now includes a light-bathed extension out the back that features local art from the 1940s to the 1970s. Don't miss Valentin Volkov's socialist realist Minsk on July 3, 1944 (1944–5), depicting the Red Army's arrival in the ruined city. Yudel Pen, Chagall's teacher, is well represented, including his 1914 portrait of Chagall.",
+            'format' => NULL,
+            'safe_value' => 'This excellent state museum has been renovated and now includes a light-bathed extension out the back that features local art from the 1940s to the 1970s. Don&#039;t miss Valentin Volkov&#039;s socialist realist Minsk on July 3, 1944 (1944–5), depicting the Red Army&#039;s arrival in the ruined city. Yudel Pen, Chagall&#039;s teacher, is well represented, including his 1914 portrait of Chagall.',
+          ),
+        ),
+      ),
+      'field_snippet_rich_text_title' => array(
+        'und' => array(
+          array(
+            'value' => 'Belarusian State Art Museum',
+            'format' => NULL,
+            'safe_value' => 'Belarusian State Art Museum',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1415927919',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '8',
+        'source' => 'node/8',
+        'alias' => 'content/snippet-rich-text',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

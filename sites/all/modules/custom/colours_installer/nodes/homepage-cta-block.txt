@@ -1,0 +1,130 @@
+array(
+  (object) array(
+      'vid' => '3',
+      'uid' => '1',
+      'title' => 'Homepage CTA block',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'aa9d127a-be3f-40e2-bb12-8d11f5a6bc5b',
+      'nid' => '3',
+      'type' => 'cta_block',
+      'language' => 'und',
+      'created' => '1415914714',
+      'changed' => '1415914714',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '0261b68e-5089-4f36-a7ca-828b4d809bd0',
+      'revision_timestamp' => '1415914714',
+      'revision_uid' => '1',
+      'field_cta_title' => array(
+        'und' => array(
+          array(
+            'value' => 'Minsk is awesome',
+            'format' => NULL,
+            'safe_value' => 'Minsk is awesome',
+          ),
+        ),
+      ),
+      'field_cta_intro' => array(
+        'und' => array(
+          array(
+            'value' => "Minsk will almost certainly surprise you. The capital of Belarus is, despite its thoroughly dreary-sounding name, a progressive and modern place quite at odds with its own reputation.\r\n",
+            'format' => NULL,
+            'safe_value' => "Minsk will almost certainly surprise you. The capital of Belarus is, despite its thoroughly dreary-sounding name, a progressive and modern place quite at odds with its own reputation.\r\n",
+          ),
+        ),
+      ),
+      'field_cta_button_title' => array(
+        'und' => array(
+          array(
+            'value' => 'Check it out now',
+            'format' => NULL,
+            'safe_value' => 'Check it out now',
+          ),
+        ),
+      ),
+      'field_cta_button_url' => array(
+        'und' => array(
+          array(
+            'value' => 'http://en.belavia.by/home/',
+            'format' => NULL,
+            'safe_value' => 'http://en.belavia.by/home/',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1415914714',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '3',
+        'source' => 'node/3',
+        'alias' => 'content/homepage-cta-block',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

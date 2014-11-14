@@ -1,0 +1,243 @@
+array(
+  (object) array(
+      'vid' => '5',
+      'uid' => '1',
+      'title' => 'Snippet links',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '16dc7013-b6f8-4066-a700-1754b2a28702',
+      'nid' => '5',
+      'type' => 'snippet_links',
+      'language' => 'und',
+      'created' => '1415923523',
+      'changed' => '1415923523',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '57e79248-1a8e-469f-b9ac-8f4c70b68b8e',
+      'revision_timestamp' => '1415923523',
+      'revision_uid' => '1',
+      'field_snippet_title' => array(
+        'und' => array(
+          array(
+            'value' => 'Minsk hotels',
+            'format' => NULL,
+            'safe_value' => 'Minsk hotels',
+          ),
+        ),
+      ),
+      'field_snippet_intro' => array(
+        'und' => array(
+          array(
+            'value' => 'There are some eye-catching hotels near the city centre',
+            'format' => NULL,
+            'safe_value' => 'There are some eye-catching hotels near the city centre',
+          ),
+        ),
+      ),
+      'field_snippet_links' => array(
+        'und' => array(
+          array(
+            'value' => '7',
+            'revision_id' => '7',
+          ),
+          array(
+            'value' => '8',
+            'revision_id' => '8',
+          ),
+          array(
+            'value' => '9',
+            'revision_id' => '9',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1415923523',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '5',
+        'source' => 'node/5',
+        'alias' => 'content/snippet-links',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+      'field_collection_deploy' => array(
+        'field_snippet_links' => array(
+          array(
+            'item_id' => '7',
+            'revision_id' => '7',
+            'field_name' => 'field_snippet_links',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => '08f2c46a-63ef-454a-aced-3ac136469918',
+            'field_snippet_link_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'Crowne Plaza Minsk hotel',
+                  'format' => NULL,
+                  'safe_value' => 'Crowne Plaza Minsk hotel',
+                ),
+              ),
+            ),
+            'field_snippet_link_url' => array(
+              'und' => array(
+                array(
+                  'value' => 'http://www.lonelyplanet.com/belarus/minsk/hotels/crowne-plaza-minsk-hotel',
+                  'format' => NULL,
+                  'safe_value' => 'http://www.lonelyplanet.com/belarus/minsk/hotels/crowne-plaza-minsk-hotel',
+                ),
+              ),
+            ),
+            'field_snippet_link_icon' => array(
+              'und' => array(
+                array(
+                  'value' => 'icon-desktop',
+                  'format' => NULL,
+                  'safe_value' => 'icon-desktop',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '8',
+            'revision_id' => '8',
+            'field_name' => 'field_snippet_links',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => '05e45da0-623b-4741-a791-170586929a58',
+            'field_snippet_link_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'Belarus Hotel',
+                  'format' => NULL,
+                  'safe_value' => 'Belarus Hotel',
+                ),
+              ),
+            ),
+            'field_snippet_link_url' => array(
+              'und' => array(
+                array(
+                  'value' => 'http://www.lonelyplanet.com/belarus/minsk/hotels/belarus-hotel',
+                  'format' => NULL,
+                  'safe_value' => 'http://www.lonelyplanet.com/belarus/minsk/hotels/belarus-hotel',
+                ),
+              ),
+            ),
+            'field_snippet_link_icon' => array(
+              'und' => array(
+                array(
+                  'value' => 'icon-bullhorn',
+                  'format' => NULL,
+                  'safe_value' => 'icon-bullhorn',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '9',
+            'revision_id' => '9',
+            'field_name' => 'field_snippet_links',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => '1089bdec-59a7-4032-b87e-1f04e5020475',
+            'field_snippet_link_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'Hotel Yubileyniy',
+                  'format' => NULL,
+                  'safe_value' => 'Hotel Yubileyniy',
+                ),
+              ),
+            ),
+            'field_snippet_link_url' => array(
+              'und' => array(
+                array(
+                  'value' => 'http://www.lonelyplanet.com/belarus/minsk/hotels/hotel-yubileiny',
+                  'format' => NULL,
+                  'safe_value' => 'http://www.lonelyplanet.com/belarus/minsk/hotels/hotel-yubileiny',
+                ),
+              ),
+            ),
+            'field_snippet_link_icon' => array(
+              'und' => array(
+                array(
+                  'value' => 'icon-globe',
+                  'format' => NULL,
+                  'safe_value' => 'icon-globe',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+        ),
+      ),
+    ),
+)

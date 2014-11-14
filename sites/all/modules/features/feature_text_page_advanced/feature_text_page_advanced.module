@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Text page advanced feature.
+ */
+
+include_once 'feature_text_page_advanced.features.inc';

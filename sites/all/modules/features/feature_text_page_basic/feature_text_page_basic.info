@@ -1,0 +1,16 @@
+name = Text page basic
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = feature_text_page_basic
+dependencies[] = features
+dependencies[] = node_reference
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_snippet_bar
+features[field_base][] = field_text_page_body
+features[field_base][] = field_text_page_display_title
+features[field_instance][] = node-text_page_basic-field_snippet_bar
+features[field_instance][] = node-text_page_basic-field_text_page_body
+features[field_instance][] = node-text_page_basic-field_text_page_display_title
+features[node][] = text_page_basic

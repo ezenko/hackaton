@@ -22,21 +22,13 @@ array(
       'field_text_page_content_items' => array(
         'und' => array(
           array(
-            'nid' => '4',
+            {content_items}
           ),
         ),
       ),
       'field_text_page_snippets' => array(
         'und' => array(
-          array(
-            'nid' => '5',
-          ),
-          array(
-            'nid' => '7',
-          ),
-          array(
-            'nid' => '8',
-          ),
+          {snippets}
         ),
       ),
       'rdf_mapping' => array(

@@ -8,3 +8,7 @@
     height: 60px;
     margin-top: -13px;
 }
+
+.login-btn {
+    margin-right: 7px !important;
+}

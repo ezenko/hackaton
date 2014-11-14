@@ -147,6 +147,32 @@ function colours_installer_settings_form() {
     '#description' => t('Links list with an icon per link and general block title'),
   );
 
+  $form['menus'] = array(
+    '#type' => 'fieldset',
+    '#collapsible' => true,
+    '#collapsed' => true,
+    '#title' => t('Menus'),
+  );
+  $form['menus']['main_menu'] = array(
+    '#title' => t('Main menu'),
+    '#type' => 'checkbox',
+    '#default_value' => 1,
+    '#disabled' => TRUE,
+    '#description' => t('Main menu is required for all the websites, so you cannot disable it :)'),
+  );
+  $form['menus']['service_menu'] = array(
+    '#title' => t('Service menu'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('service_menu', ''),
+    '#description' => t('Service menu above main menu'),
+  );
+  $form['menus']['disclaimer_menu'] = array(
+    '#title' => t('Disclaimer menu'),
+    '#type' => 'checkbox',
+    '#default_value' => variable_get('disclaimer_menu', ''),
+    '#description' => t('Disclaimer menu below the footer'),
+  );
+
   $form['actions']['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Install'),
@@ -161,51 +187,58 @@ function colours_installer_install_features($form, &$form_state) {
 
   if ($form_state['values']['elements_carousel_fixed_background']) {
     module_enable(array('feature_slider'));
-  }
-
-  if ($form_state['values']['elements_case_studies']) {
-    module_enable(array('feature_case_studies'));
-    $types[] = 'case-studies.txt';
-  }
-
-  if ($form_state['values']['elements_customer_logos']) {
-    module_enable(array('feature_customers_logos'));
-    $types[] = 'customers.txt';
-  }
-
-  if ($form_state['values']['elements_rich_text_media']) {
-    module_enable(array('feature_rich_text_media'));
-    $types[] = 'rich_text_media.txt';
-  }
-
-  if ($form_state['values']['elements_tabs']) {
-    module_enable(array('feature_tabs'));
-    $types[] = 'tabs.txt';
-  }
-
-  if ($form_state['values']['elements_testimonial']) {
-    module_enable(array('feature_testimonial'));
-    $types[] = 'testimonial.txt';
-  }
-
-  if ($form_state['values']['elements_usp']) {
-    module_enable(array('feature_usp_items'));
+    $types['slider'] = 'slider.txt';
   }
 
   if ($form_state['values']['elements_cta']) {
     module_enable(array('feature_cta_block'));
+    $types['cta'] = 'homepage-cta-block.txt';
   }
+
+  if ($form_state['values']['elements_usp']) {
+    module_enable(array('feature_usp_items'));
+    $types['usp'] = 'homepage-usp-items.txt';
+  }
+
+  if ($form_state['values']['elements_case_studies']) {
+    module_enable(array('feature_case_studies'));
+    $types['case_studies'] = 'case-studies.txt';
+  }
+
+  if ($form_state['values']['elements_testimonial']) {
+    module_enable(array('feature_testimonial'));
+    $types['testimonial'] = 'testimonial.txt';
+  }
+
+  if ($form_state['values']['elements_rich_text_media']) {
+    module_enable(array('feature_rich_text_media'));
+    $types['case_studies'] = 'rich_text_media.txt';
+  }
+
+  if ($form_state['values']['elements_tabs']) {
+    module_enable(array('feature_tabs'));
+    $types['tabs'] = 'tabs.txt';
+  }
+
+  if ($form_state['values']['elements_customer_logos']) {
+    module_enable(array('feature_customers_logos'));
+    $types['customers'] = 'customers.txt';
+  }
+
 
   if ($form_state['values']['snippet_rich_text']) {
     module_enable(array('feature_snippets'));
+    $types['snippet_rt'] = 'snippet_rich_text.txt';
   }
 
   if ($form_state['values']['snippet_banner']) {
     module_enable(array('feature_snippets'));
+    $types['snippet_banner'] = 'snippet_banner.txt';
   }
 
   if ($form_state['values']['snippet_link']) {
     module_enable(array('feature_snippets'));
+    $types['snippet_links'] = 'snippet_links.txt';
   }
 
   module_enable(array('feature_homepage'));
@@ -218,26 +251,61 @@ function colours_installer_install_features($form, &$form_state) {
     module_enable(array('feature_text_page_basic'));
   }
 
+  if ($form_state['values']['service_menu']) {
+    module_enable(array('feature_service_menu'));
+  }
+
   colours_installer_import_content($types);
 }
 
 function colours_installer_import_content($types) {
   node_types_rebuild();
-  $content_items = '';
+  $content_items = $content_items_advanced = $snippets = '';
   //import all referenced content type
-  foreach ($types as $file) {
+  foreach ($types as $type => $file) {
     $string = file_get_contents(drupal_get_path('module', 'colours_installer') . '/nodes/' . $file);
     $result = node_export_import($string);
     $nids = $result['nids'];
-    $content_items .= "array(
+
+    if (!in_array($type, array('snippet_links', 'snippet_banner', 'snippet_rich_text'))) {
+      $content_items .= "array(
                           'nid' => '" . $nids[0] . "',
                         ),";
+    }
+    if (!in_array($type, array('snippet_links', 'snippet_banner', 'snippet_rich_text', 'elements_usp', 'slider'))) {
+      $content_items_advanced .= "array(
+                          'nid' => '" . $nids[0] . "',
+                        ),";
+    }
+    if (in_array($type, array('snippet_links', 'snippet_banner', 'snippet_rich_text'))) {
+      $snippets .= "array(
+                          'nid' => '" . $nids[0] . "',
+                        ),";
+    }
+
   }
 
   //import homepage
   $string = file_get_contents(drupal_get_path('module', 'colours_installer') . '/nodes/homepage.txt');
   $string = str_replace('{content_items}', $content_items, $string);
-  //var_dump($string)
+
   $result = node_export_import($string);
+  $homepage_nids = $result['nids'];
+  variable_set('site_frontpage', 'node/' . $homepage_nids[0]);
+
+  //import text page basic
+  $string = file_get_contents(drupal_get_path('module', 'colours_installer') . '/nodes/text-page-basic.txt');
+  $string = str_replace('{snippets}', $snippets, $string);
+  $result = node_export_import($string);
+
+  //import text page basic
+  $string = file_get_contents(drupal_get_path('module', 'colours_installer') . '/nodes/text-page-advanced.txt');
+  $string = str_replace('{snippets}', $snippets, $string);
+  $string = str_replace('{content_items}', $content_items, $string);
+  $result = node_export_import($string);
+
+  drupal_goto('node/' . $homepage_nids[0]);
+
+
 
 }

@@ -1,3 +1,12 @@
+
+<?php if (!empty($service_menu)) : ?>
+  <div class="top">
+    <div class="container">
+      <?php echo str_replace('menu', 'loginbar pull-right', render($service_menu)); ?>
+    </div>
+  </div>
+<?php endif; ?>
+
 <!--=== Header ===-->
 <div class="header">
   <div class="container">

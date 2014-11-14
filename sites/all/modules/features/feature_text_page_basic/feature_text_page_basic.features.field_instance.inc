@@ -64,7 +64,7 @@ function feature_text_page_basic_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_plain',
+        'type' => 'text_default',
         'weight' => 1,
       ),
       'teaser' => array(
@@ -79,7 +79,7 @@ function feature_text_page_basic_field_default_field_instances() {
     'label' => 'Text page body',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(

@@ -22,3 +22,4 @@ features[field_instance][] = field_collection_item-field_slider_item-field_slide
 features[field_instance][] = field_collection_item-field_slider_item-field_slider_title
 features[field_instance][] = node-slider_item-field_slider_item
 features[node][] = slider_item
+mtime = 1415902566

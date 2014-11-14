@@ -18,26 +18,25 @@ function feature_usp_items_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_usp_icon',
     'foreign keys' => array(
-      'fid' => array(
+      'format' => array(
         'columns' => array(
-          'fid' => 'fid',
+          'format' => 'format',
         ),
-        'table' => 'file_managed',
+        'table' => 'filter_format',
       ),
     ),
     'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'text',
     'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
+      'max_length' => 255,
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_usp_intro'

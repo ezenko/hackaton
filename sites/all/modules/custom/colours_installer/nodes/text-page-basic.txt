@@ -1,0 +1,122 @@
+array(
+  (object) array(
+      'vid' => '9',
+      'uid' => '1',
+      'title' => 'Text page basic',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'a5876db6-0429-40f9-9862-8bd5ccb09171',
+      'nid' => '9',
+      'type' => 'text_page_basic',
+      'language' => 'und',
+      'created' => '1415929569',
+      'changed' => '1415964057',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '156d3f3c-ef9a-48ff-a303-69f4ee51624e',
+      'revision_timestamp' => '1415964057',
+      'revision_uid' => '1',
+      'field_text_page_display_title' => array(
+        'und' => array(
+          array(
+            'value' => 'Traetskae Pradmestse',
+            'format' => NULL,
+            'safe_value' => 'Traetskae Pradmestse',
+          ),
+        ),
+      ),
+      'field_text_page_body' => array(
+        'und' => array(
+          array(
+            'value' => "<p>&nbsp;</p>\r\n\r\n<p><iframe frameborder=\"0\" height=\"300\" src=\"https://www.google.com/maps/embed/v1/place?q=Trinity%20Hill%2C%20Minsk%2C%20Minsk%20Province%2C%20Belarus&amp;key=AIzaSyDQU2PctiS9inF4b3ZUg4I43tBGi9AVUTs\" style=\"border:0\" width=\"450\"></iframe></p>\r\n\r\n<p>In lieu of any real remaining Old Town is Traetskae Pradmestse, a pleasant – if tiny – re-creation of Minsk's prewar buildings on a pretty bend of the river north of the centre. It's worth strolling through for its little cafes, restaurants and shops. At the end of a little footbridge nearby is the evocative Afghan war memorial, Island of Courage and Sorrow , more commonly called the Island of Tears by locals. Standing on a small island connected by a walking bridge, it's built in the form of a tiny church, with four entrances, and is surrounded by towering gaunt statues of sorrowful mothers and sisters of Belarusian soldiers who perished in the war between the Soviet Union and Afghanistan (1979–89). Look for the small statue of the crying angel , off to the side – it is the guardian angel of Belarus.</p>\r\n",
+            'format' => 'full_html',
+            'safe_value' => "<p>&nbsp;</p>\n\n<p><iframe frameborder=\"0\" height=\"300\" src=\"https://www.google.com/maps/embed/v1/place?q=Trinity%20Hill%2C%20Minsk%2C%20Minsk%20Province%2C%20Belarus&amp;key=AIzaSyDQU2PctiS9inF4b3ZUg4I43tBGi9AVUTs\" style=\"border:0\" width=\"450\"></iframe></p>\n\n<p>In lieu of any real remaining Old Town is Traetskae Pradmestse, a pleasant – if tiny – re-creation of Minsk's prewar buildings on a pretty bend of the river north of the centre. It's worth strolling through for its little cafes, restaurants and shops. At the end of a little footbridge nearby is the evocative Afghan war memorial, Island of Courage and Sorrow , more commonly called the Island of Tears by locals. Standing on a small island connected by a walking bridge, it's built in the form of a tiny church, with four entrances, and is surrounded by towering gaunt statues of sorrowful mothers and sisters of Belarusian soldiers who perished in the war between the Soviet Union and Afghanistan (1979–89). Look for the small statue of the crying angel , off to the side – it is the guardian angel of Belarus.</p>\n",
+          ),
+        ),
+      ),
+      'field_snippet_bar' => array(
+        'und' => array(
+          array(
+            'nid' => '7',
+          ),
+          array(
+            'nid' => '5',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1415929569',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '9',
+        'source' => 'node/9',
+        'alias' => 'content/text-page-basic',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

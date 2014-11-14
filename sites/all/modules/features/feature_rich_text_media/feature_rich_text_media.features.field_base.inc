@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * feature_customers_logos.features.field_base.inc
+ * feature_rich_text_media.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function feature_customers_logos_field_default_field_bases() {
+function feature_rich_text_media_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_cl_display_title'
-  $field_bases['field_cl_display_title'] = array(
+  // Exported field_base: 'field_rtm_display_title'
+  $field_bases['field_rtm_display_title'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_cl_display_title',
+    'field_name' => 'field_rtm_display_title',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -39,96 +39,96 @@ function feature_customers_logos_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_customer_logo'
-  $field_bases['field_customer_logo'] = array(
+  // Exported field_base: 'field_rtm_image'
+  $field_bases['field_rtm_image'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_customer_logo',
+    'field_name' => 'field_rtm_image',
+    'foreign keys' => array(
+      'fid' => array(
+        'columns' => array(
+          'fid' => 'fid',
+        ),
+        'table' => 'file_managed',
+      ),
+    ),
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
+  // Exported field_base: 'field_rtm_media_alignment'
+  $field_bases['field_rtm_media_alignment'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_rtm_media_alignment',
     'foreign keys' => array(),
     'indexes' => array(
-      'revision_id' => array(
-        0 => 'revision_id',
+      'value' => array(
+        0 => 'value',
       ),
     ),
     'locked' => 0,
-    'module' => 'field_collection',
+    'module' => 'list',
     'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
+      'allowed_values' => array(
+        'right' => 'right',
+        'left' => 'left',
+      ),
+      'allowed_values_function' => '',
     ),
     'translatable' => 0,
-    'type' => 'field_collection',
+    'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_customer_logo_hover'
-  $field_bases['field_customer_logo_hover'] = array(
+  // Exported field_base: 'field_rtm_text'
+  $field_bases['field_rtm_text'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_customer_logo_hover',
+    'field_name' => 'field_rtm_text',
     'foreign keys' => array(
-      'fid' => array(
+      'format' => array(
         'columns' => array(
-          'fid' => 'fid',
+          'format' => 'format',
         ),
-        'table' => 'file_managed',
+        'table' => 'filter_format',
       ),
     ),
     'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
+    'module' => 'text',
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_customer_logo_image'
-  $field_bases['field_customer_logo_image'] = array(
+  // Exported field_base: 'field_rtm_vimeo_link'
+  $field_bases['field_rtm_vimeo_link'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_customer_logo_image',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
-  );
-
-  // Exported field_base: 'field_customer_logo_link'
-  $field_bases['field_customer_logo_link'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_customer_logo_link',
+    'field_name' => 'field_rtm_vimeo_link',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(

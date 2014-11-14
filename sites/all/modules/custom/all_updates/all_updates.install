@@ -74,3 +74,11 @@ function all_updates_update_7002() {
   return 'enable and disable default modules and settings.';
 
 }
+
+function all_updates_update_7003() {
+  include_once './includes/install.inc';
+  $enablemodules = array('feature_rich_text_media', 'feature_testimonial', 'feature_tabs');
+  module_enable($enablemodules);
+
+  return 'enable additional features';
+}

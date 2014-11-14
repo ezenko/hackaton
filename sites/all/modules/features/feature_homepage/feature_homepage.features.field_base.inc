@@ -39,8 +39,11 @@ function feature_homepage_field_default_field_bases() {
         'cta_block' => 'cta_block',
         'customer_logo' => 'customer_logo',
         'homepage' => 0,
+        'item_rich_text_and_media' => 'item_rich_text_and_media',
+        'item_tabs' => 'item_tabs',
         'page' => 0,
         'slider_item' => 'slider_item',
+        'testimonial' => 'testimonial',
         'usp_items' => 'usp_items',
       ),
       'view' => array(

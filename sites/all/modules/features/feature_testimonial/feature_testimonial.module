@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Item - Testimonial feature.
+ */
+
+include_once 'feature_testimonial.features.inc';

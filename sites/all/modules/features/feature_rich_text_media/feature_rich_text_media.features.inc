@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * feature_case_studies.features.inc
+ * feature_rich_text_media.features.inc
  */
 
 /**
  * Implements hook_node_info().
  */
-function feature_case_studies_node_info() {
+function feature_rich_text_media_node_info() {
   $items = array(
-    'case_studies' => array(
-      'name' => t('Case studies'),
+    'item_rich_text_and_media' => array(
+      'name' => t('Item - Rich text and media'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

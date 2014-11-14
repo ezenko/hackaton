@@ -1,0 +1,11 @@
+name = Item - Testimonial
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_tesimonial_text
+features[field_base][] = field_testimonial_name
+features[field_instance][] = node-testimonial-field_tesimonial_text
+features[field_instance][] = node-testimonial-field_testimonial_name
+features[node][] = testimonial

@@ -22,3 +22,4 @@ features[field_instance][] = field_collection_item-field_case_studies_items-fiel
 features[field_instance][] = node-case_studies-field_case_studies_items
 features[field_instance][] = node-case_studies-field_case_studies_title
 features[node][] = case_studies
+mtime = 1415898412

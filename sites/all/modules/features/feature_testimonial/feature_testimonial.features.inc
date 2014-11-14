@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * feature_case_studies.features.inc
+ * feature_testimonial.features.inc
  */
 
 /**
  * Implements hook_node_info().
  */
-function feature_case_studies_node_info() {
+function feature_testimonial_node_info() {
   $items = array(
-    'case_studies' => array(
-      'name' => t('Case studies'),
+    'testimonial' => array(
+      'name' => t('Testimonial'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
